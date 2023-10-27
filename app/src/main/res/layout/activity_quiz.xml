@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="584dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            app:srcCompat="@drawable/bulgaria" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="39dp" /><![CDATA[
+
+        />
+
+
+
+
+
+        ]]>
+
+        <RadioGroup
+            android:id="@+id/rdgQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="244dp">
+
+            <RadioButton
+                android:id="@+id/rdbResposta1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Brasil" />
+
+            <RadioButton
+                android:id="@+id/rdbResposta2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Bulgaria" />
+
+            <RadioButton
+                android:id="@+id/rdbResposta3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Espanha" />
+
+            <RadioButton
+                android:id="@+id/rdbResposta4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Estados Unidos" />
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btnResponder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#1B94B3"
+            android:enabled="false"
+            android:fontFamily="@font/poppins_black"
+            android:onClick="btnResponderOnClick"
+            android:text="Responder"
+            android:textColor="#ffffff"
+            app:cornerRadius="@android:dimen/notification_large_icon_width" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
